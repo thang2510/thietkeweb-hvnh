@@ -1,0 +1,52 @@
+/* Tổng thể header */
+.header {
+    width: 100%;       /* Chiều rộng cố định */
+    height: 30px;       /* Chiều cao cố định */
+    background-color: #efebdb; /* Màu nền nhạt */
+    margin: 0 auto;     /* Căn giữa header */
+    display: flex;
+    justify-content: space-between; /* Tách đều hai bên */
+    align-items: center; /* Căn chỉnh dọc */
+    padding: 0 10px;     /* Khoảng cách hai bên trong header */
+    font-family: Arial, sans-serif;
+}
+
+/* Phần bên trái (Lotte Cinema APP và Facebook) */
+.header-left {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các mục */
+}
+
+.header-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #6f6247; /* Màu chữ giống thiết kế */
+    font-size: 12px; /* Kích thước chữ */
+}
+
+.header-link img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px; /* Khoảng cách giữa icon và chữ */
+}
+
+/* Phần bên phải (Menu) */
+.header-right ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các mục menu */
+    margin: 0;
+    padding: 0;
+}
+
+.header-right ul li a {
+    text-decoration: none;
+    color: #6f6247;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.header-right ul li a:hover {
+    color: #000; /* Đổi màu khi hover */
+}
