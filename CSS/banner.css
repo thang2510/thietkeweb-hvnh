@@ -50,23 +50,3 @@ body {
     width: 100%;
     height: 180px;
 }
-.header .evenApp a.evenAppText:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -1px;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    background: url('../IMG/icon/icon_lottecinemaapp.png') 0 0 no-repeat;
-}
-.header .evenFB a.evenFBText::before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: -1px;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    background: url('../IMG/icon/icon_fb_top.png') 0 0 no-repeat;
-}

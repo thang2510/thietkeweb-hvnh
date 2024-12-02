@@ -23,6 +23,7 @@
     text-decoration: none;
     color: #6f6247; /* Màu chữ giống thiết kế */
     font-size: 12px; /* Kích thước chữ */
+    font: bold;
 }
 
 .header-link img {
@@ -41,7 +42,7 @@
 }
 
 .header-right ul li a {
-    text-decoration: none;
+    text-decoration: none; /*không gạch dưới*/
     color: #6f6247;
     font-size: 12px;
     transition: color 0.3s;
@@ -49,4 +50,25 @@
 
 .header-right ul li a:hover {
     color: #000; /* Đổi màu khi hover */
+}
+
+.header-link-container {
+    position: relative; /* Để định vị chính xác qr-popup */
+    display: inline-block;
+}
+
+.qr-popup {
+    display: none; /* Ẩn mặc định */
+    position: absolute;
+    top: 100%; /* Đặt ngay dưới phần "Cinema APP" */
+    left: 0;
+    z-index: 10; /* Đảm bảo phần này hiển thị trên cùng */
+    background-color: #fff; /* Nền trắng để rõ hơn */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    border: 1px solid #ddd;
+}
+
+.header-link-container:hover .qr-popup {
+    display: block; /* Hiển thị khi hover */
 }
