@@ -72,3 +72,29 @@
 .header-link-container:hover .qr-popup {
     display: block; /* Hiển thị khi hover */
 }
+
+.header h1 {
+    font-size: 0;
+    line-height: 0;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.header .logo {
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    width: 980px;
+    margin: 0 0 0 -490px;
+    text-align: center;
+}
