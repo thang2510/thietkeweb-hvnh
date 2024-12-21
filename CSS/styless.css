@@ -1,92 +1,95 @@
 /* Tổng thể header */
 .header {
-    width: 100%;       /* Chiều rộng cố định */
-    height: 30px;       /* Chiều cao cố định */
-    background-color: #efebdb; /* Màu nền nhạt */
-    margin: 0 auto;     /* Căn giữa header */
-    display: flex;
-    justify-content: space-between; /* Tách đều hai bên */
-    align-items: center; /* Căn chỉnh dọc */
-    padding: 0 10px;     /* Khoảng cách hai bên trong header */
+    width: 100%;
+    height: 30px;
+    /* Chiều cao cố định */
+    background-color: #efebdb;
     font-family: Arial, sans-serif;
 }
 
-/* Phần bên trái (Lotte Cinema APP và Facebook) */
-.header-left {
-    display: flex;
-    gap: 15px; /* Khoảng cách giữa các mục */
-}
-
-.header-link {
-    display: flex;
-    align-items: center;
+a {
     text-decoration: none;
-    color: #6f6247; /* Màu chữ giống thiết kế */
-    font-size: 12px; /* Kích thước chữ */
-    font: bold;
+    color: #555;
 }
 
-.header-link img {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px; /* Khoảng cách giữa icon và chữ */
+.header .Laypop-app {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -500px;
+    line-height: 14px;
 }
+
+.header .Laypop-FB {
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    margin-left: -356px;
+}
+
+.header .Laypop-app a.app {
+    display: block;
+    height: 22px;
+    padding-left: 22px;
+    font-weight: 600;
+}
+
+.header .Laypop-FB a {
+    padding-left: 22px;
+    color: #444644;
+    font-weight: 600;
+}
+
+.header .luncher {
+    width: 100%;
+    height: 30px;
+    background: #efebdb;
+    line-height: 12px;
+}
+
 
 /* Phần bên phải (Menu) */
-.header-right ul {
-    list-style: none;
-    display: flex;
-    gap: 20px; /* Khoảng cách giữa các mục menu */
-    margin: 0;
-    padding: 0;
+.header .luncher ul {
+    float: right;
+    padding-right: 15px;
 }
 
-.header-right ul li a {
-    text-decoration: none; /*không gạch dưới*/
-    color: #6f6247;
+.header .luncher ul li {
+    float: left;
     font-size: 12px;
-    transition: color 0.3s;
+    padding: 9px 0 0 20px;
+    line-height: 12px;
 }
 
-.header-right ul li a:hover {
-    color: #000; /* Đổi màu khi hover */
+.header .luncher ul li a {
+    font-size: 12px;
+    color: #6f6247;
 }
 
-.header-link-container {
-    position: relative; /* Để định vị chính xác qr-popup */
-    display: inline-block;
+.header .luncher ul li.active a {
+    font-weight: bold;
+    border-bottom: 1px solid #9d9580;
+}
+
+.header .luncher ul li a:hover {
+    border-bottom: 1px solid #9d9580;
 }
 
 .qr-popup {
-    display: none; /* Ẩn mặc định */
+    display: none;
     position: absolute;
-    top: 100%; /* Đặt ngay dưới phần "Cinema APP" */
+    top: 100%;
     left: 0;
-    z-index: 10; /* Đảm bảo phần này hiển thị trên cùng */
-    background-color: #fff; /* Nền trắng để rõ hơn */
+    z-index: 10;
+    background-color: #fff;
     padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
 }
 
-.header-link-container:hover .qr-popup {
-    display: block; /* Hiển thị khi hover */
-}
-
-.header h1 {
-    font-size: 0;
-    line-height: 0;
-}
-
-h1 {
+.header .Laypop-app:hover .qr-popup {
     display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
+    /* Hiển thị khi hover */
 }
 
 .header .logo {
@@ -97,4 +100,35 @@ h1 {
     width: 980px;
     margin: 0 0 0 -490px;
     text-align: center;
+}
+
+/* Menu */
+.header .menu {
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 18px;
+    margin: 79px 0 0 0;
+    padding: 27px 0 0 0;
+    background: url(../IMG/bg_gnb.gif) repeat-x top center;
+}
+
+.header.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header.menu a:hover {
+    color: #000;
 }
