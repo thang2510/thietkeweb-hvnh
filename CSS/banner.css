@@ -39,18 +39,12 @@ img {
 }
 
 /* Close button */
-.btn-close {
+.btn_close {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 15px;
-    height: 15px;
+    margin-right: 10px;
     cursor: pointer;
-}
-
-.btn-close img {
-    width: 100%;
-    height: auto;
+    background-color: black;
+    color: white;
 }
 
 .header{
