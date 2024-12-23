@@ -1,134 +1,241 @@
-/* Tổng thể header */
-.header {
-    width: 100%;
-    height: 30px;
-    /* Chiều cao cố định */
-    background-color: #efebdb;
-    font-family: Arial, sans-serif;
-}
 
-a {
-    text-decoration: none;
-    color: #555;
-}
-
-.header .Laypop-app {
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    margin-left: -500px;
-    line-height: 14px;
-}
-
-.header .Laypop-FB {
-    position: absolute;
-    top: 9px;
-    left: 50%;
-    margin-left: -356px;
-}
-
-.header .Laypop-app a.app {
-    display: block;
-    height: 22px;
-    padding-left: 22px;
-    font-weight: 600;
-}
-
-.header .Laypop-FB a {
-    padding-left: 22px;
-    color: #444644;
-    font-weight: 600;
-}
-
-.header .luncher {
-    width: 100%;
-    height: 30px;
-    background: #efebdb;
-    line-height: 12px;
-}
-
-
-/* Phần bên phải (Menu) */
-.header .luncher ul {
-    float: right;
-    padding-right: 15px;
-}
-
-.header .luncher ul li {
-    float: left;
-    font-size: 12px;
-    padding: 9px 0 0 20px;
-    line-height: 12px;
-}
-
-.header .luncher ul li a {
-    font-size: 12px;
-    color: #6f6247;
-}
-
-.header .luncher ul li.active a {
-    font-weight: bold;
-    border-bottom: 1px solid #9d9580;
-}
-
-.header .luncher ul li a:hover {
-    border-bottom: 1px solid #9d9580;
-}
-
-.qr-popup {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 10;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
-}
-
-.header .Laypop-app:hover .qr-popup {
-    display: block;
-    /* Hiển thị khi hover */
-}
-
-.header .logo {
+.blind {
     overflow: hidden;
     position: absolute;
-    left: 50%;
-    top: 30px;
-    width: 980px;
-    margin: 0 0 0 -490px;
+    left: -9999px !important;
+    top: -9999px !important;
+}
+
+.Content {
+    position: relative;
+    width: 1000px;
+    height: 645px;
+    margin: 20px auto 0;
+}
+
+.Content .event {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 1020px;
+    width: 1115px;
+    height: 645px;
+}
+
+.Content .office {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 315px;
+    height: 645px;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #fff;
+}
+
+.Content .office .officeTop {
+    height: 121px;
+    text-align: center;
+    background: #2a2e33;
+}
+
+.Content .office .officeTop h2 {
+    padding: 50px 0 27px;
+}
+
+.Content .office .officeCont {
+    padding-top: 20px;
+}
+
+.Content .office .officeCont .officeRk li {
+    overflow: hidden;
+    height: 54px;
+    padding: 11px 10px 0;
+    box-sizing: border-box;
+}
+
+.Content .office .officeCont .officeRk li .tit em {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 5px;
+    font-family: 'linlivertine';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Content .office .officeCont .officeRk li .tit .mvTit {
+    display: inline-block;
+    width: 125px;
+    height: 17px;
+    line-height: 17px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Content .office .officeCont .officeRk li .memRk {
+    float: right;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    font-size: 12px;
+}
+
+.Content .office .officeCont .officeRk li .tit {
+    float: left;
+    display: table;
+    height: 30px;
+    color: #1a1917;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+[class^=grade_] {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    text-indent: -99999em;
+}
+
+.grade_16 {
+    background: url(../IMG/icon/16.png) no-repeat 0 0;
+}
+
+.grade_11 {
+    background: url(../IMG/icon/K.png) no-repeat 0 0;
+}
+
+.grade_all {
+    background: url(../IMG/icon/P.png) no-repeat 0 0;
+}
+
+.grade_18 {
+    background: url(../IMG/icon/18.png) no-repeat 0 0;
+}
+
+.content_Main .office .btn_ticket {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    background: #ee1c25;
+    color: #fff;
+    height: 64px;
+    line-height: 64px;
+    font-weight: bold;
+    font-size: 16px;
     text-align: center;
 }
+.content_Main .trailer {
+    position: absolute;
+    top: 0;
+    left: 335px;
+    width: 1115px;
+    height: 645px;
+    overflow: hidden;
+}
 
-/* Menu */
-.header .menu {
-    clear: both;
+.slidePoster {
     position: relative;
     width: 100%;
-    height: 18px;
-    margin: 79px 0 0 0;
-    padding: 27px 0 0 0;
-    background: url(../IMG/bg_gnb.gif) repeat-x top center;
+    height: 274px;
+    margin: 70px auto;
 }
 
-.header.menu ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.slidePoster {
+    height: auto !important;
 }
 
-.header.menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
+.slidePoster .slide {
+    position: relative;
+    width: 980px;
+    height: 274px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.header.menu a:hover {
-    color: #000;
+.slidePoster .slide ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 274px;
+}
+
+.slidePoster .slide ul li:first-child {
+    margin-left: 0;
+}
+
+.slidePoster .slide ul li {
+    position: relative;
+    float: left;
+    width: 188px;
+    margin-left: 10px;
+    height: 274px;
+}
+
+.slidePoster .slide ul li > a > img {
+    width: 188px;
+    height: 274px;
+}
+
+.event_Main {
+    padding: 40px 0;
+    border-top: 1px solid #e3e1d6;
+    background: url(../IMG/bg_pattern.png) repeat left top;
+}
+
+.event_Main > h2 {
+    padding-bottom: 40px;
+    color: #231f20;
+    font-size: 40px;
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: normal;
+}
+
+.event_Main > h2 strong {
+    display: block;
+    font-family: 'linlivertine';
+    font-style: italic;
+}
+
+.event_Main .event_Main_in {
+    overflow: hidden;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.event_Main .event_Main_in .event1 {
+    float: left;
+    width: 650px;
+}
+
+.fl {
+    float: left;
+}
+
+.event_Main .event_Main_in .pbBn {
+    padding-bottom: 20px;
+}
+
+.event_Main .event_Main_in .fr {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.event_Main .event_Main_in .fr {
+    float: right;
+    margin-bottom: 20px;
 }

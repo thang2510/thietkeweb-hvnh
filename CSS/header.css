@@ -1,0 +1,139 @@
+/* Tổng thể header */
+.header {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.header .Laypop-app {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -500px;
+    line-height: 14px;
+}
+
+.header .Laypop-FB {
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    margin-left: -356px;
+}
+
+.header .Laypop-app a.app {
+    display: block;
+    height: 22px;
+    padding-left: 22px;
+    font-weight: 600;
+}
+
+.header .Laypop-FB a {
+    padding-left: 22px;
+    color: #444644;
+    font-weight: 600;
+}
+
+.header .luncher {
+    width: 100%;
+    height: 30px;
+    background: #efebdb;
+    line-height: 12px;
+}
+
+
+/* Phần bên phải (Menu) */
+.header .luncher ul {
+    float: right;
+    padding-right: 15px;
+}
+
+.header .luncher ul li {
+    float: left;
+    font-size: 12px;
+    padding: 9px 0 0 20px;
+    line-height: 12px;
+}
+
+.header .luncher ul li a {
+    font-size: 12px;
+    color: #6f6247;
+}
+
+.header .luncher ul li.active a {
+    font-weight: bold;
+    border-bottom: 1px solid #9d9580;
+}
+
+.header .luncher ul li a:hover {
+    border-bottom: 1px solid #9d9580;
+}
+
+.qr-popup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.header .Laypop-app:hover .qr-popup {
+    display: block;
+    /* Hiển thị khi hover */
+}
+
+.header .logo {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    width: 980px;
+    margin: 0 0 0 -490px;
+    text-align: center;
+}
+
+/* Menu */
+.header .menu {
+    width: 100%;
+    height: 18px;
+    margin: 79px 0 0 0;
+    padding: 27px 0 0 0;
+    background: url(../IMG/bg_gnb.gif) repeat-x top center;
+}
+
+.header .menu ul {
+    justify-content: right;
+    gap: 20px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.header .menu ul li {
+    display: inline-block;
+    padding: 0 20px;
+    background: url(../IMG/bg_gnb_menuBar.gif) no-repeat left top;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+
+}
+
+.header .menu ul li:first-child {
+    background: none;
+}
+
+.header .menu a {
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
