@@ -15,7 +15,7 @@
 }
 
 .c_fixed {
-    position: relative;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
@@ -57,9 +57,126 @@
     border-color: #cdc197;
 }
 
-.tab_sb03.tab_st07 li a {
+.btn50.active{
+    background: #cdc197;
+}
+
+.btn10.active{
+    background: #cdc197;
+}
+
+.btn20.active{
+    background: #cdc197;
+}
+
+.list_cinema_hot_selling {
+    margin-left: -20px;
+}
+
+.tab_st07 li a {
     /* width: 246px; */
     line-height: 48px;
     font-weight: bold;
     margin-bottom: 0;
+}
+
+.cinema_hot_selling {
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #231f20;
+    font-weight: bold;
+    padding-top: 30px !important;
+}
+
+.list_cinema_hot_selling li {
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 322px;
+    margin: 0 0 50px 20px;
+    background: #fff;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.list_cinema_hot_selling li .thumb {
+    display: block;
+    width: 228px;
+    height: 189px;
+}
+
+.list_cinema_hot_selling .thumb a {
+    display: block;
+    position: relative;
+}
+
+.list_cinema_hot_selling li .thumb img {
+    width: 228px;
+    height: 189px;
+}
+
+.list_cinema_hot_selling li .product_txt {
+    height: 91px;
+    padding: 16px 15px 20px;
+    background: #fff;
+    border-top: 1px solid #dedede;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.list_cinema_hot_selling li .product_tit {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #231f20;
+    font-weight: bold;
+}
+.product_tit a {
+    color: #231f20;
+    word-wrap: break-word;
+}
+
+.list_cinema_hot_selling li .product_txt > dd {
+    color: #666;
+    font-size: 13px;
+    line-height: 15px;
+    /* letter-spacing: -1.0px; */
+    word-break: break-all;
+}
+
+.list_cinema_hot_selling li .date > span {
+    margin-right: 5px;
+    padding-right: 9px;
+    background: url(../IMG/Ticket/bg_product_line.gif) no-repeat 100% 3px;
+}
+
+.list_cinema_hot_selling li .product_price {
+    padding: 0 15px;
+    border-top: 1px solid #ebebeb;
+    line-height: 38px;
+    font-weight: bold;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.list_cinema_hot_selling li .product_price .dash_price {
+    float: left;
+    color: #777;
+    font-weight: bold;
+}
+
+.list_cinema_hot_selling li .product_price .price {
+    float: right;
+    color: #231f20;
+    font-weight: bold;
+}
+
+.list_cinema_hot_selling li .product_price .price em {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'linlivertine';
+    /* font-style: italic; */
 }
