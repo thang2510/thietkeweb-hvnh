@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../CSS/banner.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
-    <link rel="stylesheet" href="../CSS/Shop.css">
+    <link rel="stylesheet" href="../CSS/khuyenmai.css">
 </head>
 
 <body>
@@ -70,34 +70,148 @@
     </div>
     <!--Container-->
     <div class="Container">
-        <div class="content">
-            <div class="Movie_box">
-                <img src="../IMG/Movie_box.jpg" alt="Movie_box">
-            </div>
-        </div>
         <div class="product">
             <div class="product_inner">
                 <div class="c_fixed">
                     <div class="bg_fixed" style="background: none; position: relative;">
-                        <ul class="tab_st07 tab_sb03">
+                        <ul class="tab_st07">
                             <li class="on">
-                                <a href="" class="btn50" style="width: 326.667px;">Bán Chạy Nhất</a>
+                                <a href="" class="btn50 active" data-electronic="promotion"
+                                    style="width: 326.667px;">PROMOTION</a>
                             </li>
                             <li class="">
-                                <a href="" class="btn10" style="width: 326.667px;">Danh Mục Hàng Bán</a>
+                                <a href="" class="btn10" data-electronic="promosion" style="width: 326.667px;">PHIM</a>
                             </li>
                             <li class="">
-                                <a href="" class="btn20" style="width: 326.667px;">Lotte Combo</a>
+                                <a href="" class="btn20" data-electronic="list_cinema_hot_selling"
+                                    style="width: 326.667px;">ĐỐI TÁC</a>
                             </li>
                         </ul>
                     </div>
                 </div>
+                <h3 class="promotion">Promotion</h3>
+                <ul class="list_PROMOTION">
+                    <ul id="emovie_list_10" class="emovie_list">
+                        <li><img src="../IMG/KhuyenMai/1.png" alt="KHUI BLINDBOX NHẬN TÀI LỘC ">
+                            <p class="evt_period">24/12/2024 ~ 03/01/2025</p>
+                        </li>
+                        <li><img src="../IMG/KhuyenMai/2.jpg" alt="DEAL HỜI CUỐI NĂM – SUPER PACKAGE DECEMBER">
+                            <p class="evt_period">23/12/2024 ~ 01/01/2025</p>
+                        </li>
+                        <li><img src="../IMG/KhuyenMai/3.png"
+                                alt="SINH NHẬT LOTTE MART 16 TUỔI – TẶNG VOUCHER GIẢM GIÁ CỰC SỐC">
+                            <p class="evt_period">12/12/2024 ~ 01/01/2025</p>
+                        </li>
+                        <li><img src="../IMG/KhuyenMai/4.png" alt="ƯU ĐÃI GIÁ VÉ CỰC SỐC THÁNG 12">
+                            <p class="evt_period">12/12/2024 ~ 01/01/2025</p>
+                        </li>
+                    </ul>
+                </ul>
+                <h3 class="Movie">Phim</h3>
+                <ul id="emovie_list_20" class="emovie_list">
+                    <li><img src="../IMG/KhuyenMai/5.png" alt="TẶNG QUÀ TUỔI THƠ - KÍNH VẠN HOA "></a>
+                        <p class="evt_period">24/12/2024 ~ 08/02/2025</p>
+                    </li>
+                    <li><img src="../IMG/KhuyenMai/6.jpg" alt="RA MẮT LY PHIM: VUA SƯ TỬ">
+                        <p class="evt_period">19/12/2024 ~ 01/03/2025</p>
+                    </li>
+                    <li><img src="../IMG/KhuyenMai/7.jpg" alt="LY PHIM MOANA 2"></a>
+                        <p class="evt_period">26/11/2024 ~ 31/12/2024</p>
+                    </li>
+                    <li><img src="../IMG/KhuyenMai/8.jpg" alt="CHÍNH THỨC RA MẮT LY NƯỚC WICKED ">
+                        <p class="evt_period">22/11/2024 ~ 31/12/2024</p>
+                    </li>
+                </ul>
+                <h3 class="doitac">Đối tác</h3>
+                <ul id="emovie_list_50" class="emovie_list">
+                    <li><img src="https://media.lottecinemavn.com/Media/Event/3624774a52324c2090988f770f2ceca2.jpg"
+                            alt="[ZALOPAY] PHIM HAY GIÁ TỐT, CHỐT NĂM NĂM CHỤC KA"></a>
+                        <p class="evt_period">16/12/2024 ~ 01/01/2025</p>
+                    </li>
+                    <li><img src="https://media.lottecinemavn.com/Media/Event/881e962f10e64b97a3c0ed4364779727.jpg"
+                            alt="ĐẶT VÉ XEM PHIM - TRÚNG IPHONE 16 PRO MAX"></a>
+                        <p class="evt_period">10/12/2024 ~ 09/02/2025</p>
+                    </li>
+                    <li><img src="https://media.lottecinemavn.com/Media/Event/ce0dcd52ccf14500855cc0bb34a748bb.jpg"
+                            alt="GIẢM 50K KHI MUA VÉ XEM PHIM VÀ THANH TOÁN BẰNG NAPAS"></a>
+                        <p class="evt_period">01/12/2024 ~ 30/03/2025</p>
+                    </li>
+                    <li><img src="https://media.lottecinemavn.com/Media/Event/033ee6a9426b44c6a784c7d3bf69fce0.jpg"
+                            alt="GIẢM 50K KHI MUA VÉ XEM PHIM DÀNH CHO THẺ TÍN DỤNG VIB"></a>
+                        <p class="evt_period">29/11/2024 ~ 31/12/2024</p>
+                    </li>
+                </ul>
             </div>
         </div>
-
+        <div class="tab_follow" id="quick" style="top: 700px;">
+            <ul>
+                <li>
+                    <a href="Ticket.html" title="Đặt vé nhanh ">
+                        <span>
+                            <img src="../IMG/DAT_VE_NHANH.jpg" alt="Đặt vé nhanh ">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Cinema.html" title="Nơi đặt vé">
+                        <span>
+                            <img src="../IMG/NOI_DAT_VE.jpg" alt="Nơi đặt vé">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" title="Membership">
+                        <span>
+                            <img src="../IMG/MEMBERSHIP.jpg" alt="Membership">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Hotline.html" title="Trung tâm khách hàng ">
+                        <span>
+                            <img src="../IMG/FAQ.jpg" alt="Trung tâm khách hàng ">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <a href="" class="btn_top" title="TOP" style="display: block;">
+                <span>TOP</span>
+                <img src="../IMG/icon_quick_new07.png" alt="Di chuyển lên">
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footBnImg">
+            <div class="Footer_Main">
+                <a href="KhuyenMai.html">
+                    <img src="../IMG/footer_main.jpg" width="980" alt="Bottom 1 HONDA BOOKING">
+                </a>
+            </div>
+        </div>
+        <div class="ads_banner">
+            <a href="event.html">
+                <img src="../IMG/event_content.png" width="980" height="372">
+            </a>
+        </div>
+        <div class="footInner">
+            <div class="footer_tit">
+                <span class="footer_logo">
+                    <img src="../IMG/logo_footer.gif" alt="LOTTE CINEMA">
+                </span>
+            </div>
+            <div class="company_info">
+                <p>CÔNG TY TNHH LOTTE CINEMA VIỆT NAM</p>
+                <p>Giấy CNĐKDN: xxxxxxxxxxxx, đăng ký lần đầu ngày xxxxxxxx, đăng ký thay đổi lần thứ 10 ngày xxxxxxxx,
+                    cấp bởi Sở KHĐT Thành phố xxxxxxxxxxx</p>
+                <p>Địa chỉ: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                <p>Hotline: xxxxxxxxxxxx</p>
+            </div>
+        </div>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../JSS/btn_close.js"></script>
+    <script src="../JSS/movie.js"></script>
 </body>
 
 </html>

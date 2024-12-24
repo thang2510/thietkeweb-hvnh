@@ -94,13 +94,15 @@
 }
 
 .list_movie .child_movie li{
-    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử con */
-    align-items: center; /* Căn giữa dọc giữa ảnh và văn bản */
-    gap: 10px; /* Khoảng cách giữa ảnh và văn bản */
     position: relative;
     border: 1px solid black; /* Đóng khung cho toàn bộ phần tử */
     padding: 10px; /* Khoảng cách giữa khung và các phần tử bên trong */
     box-sizing: border-box; /* Đảm bảo padding không làm ảnh hưởng đến kích thước */
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+    color: #666;
 }
 
 .list_movie a {
