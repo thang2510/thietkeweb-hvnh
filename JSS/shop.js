@@ -33,3 +33,23 @@ tabLinks.forEach(function (el) {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const tabFollow = document.getElementById('quick');
+
+    if (tabFollow) {
+        const viewportHeight = window.innerHeight;
+
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+            // Calculate position to always be vertically centered
+            const newTop = scrollTop + viewportHeight / 2 - tabFollow.offsetHeight / 2;
+
+            
+            tabFollow.style.position = 'absolute';
+            tabFollow.style.top = `${newTop}px`;
+           // tabFollow.style.right = '0px'; // Ensure it stays at the right edge
+        });
+    }
+});
