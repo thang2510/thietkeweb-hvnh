@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
             tabFollow.style.position = 'absolute';
             tabFollow.style.top = `${newTop}px`;
            // tabFollow.style.right = '0px'; // Ensure it stays at the right edge
+           tabFollow.style.transition = "1 ease";
         });
     }
 });

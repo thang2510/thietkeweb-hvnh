@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../CSS/banner.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
-    <link rel="stylesheet" href="../CSS/Shop.css">
+    <link rel="stylesheet" href="../CSS/movie.css">
 </head>
 
 <body>
@@ -70,34 +70,186 @@
     </div>
     <!--Container-->
     <div class="Container">
-        <div class="content">
-            <div class="Movie_box">
-                <img src="../IMG/Movie_box.jpg" alt="Movie_box">
+        <div class="slider-wrap">
+            <div class="slider">
+                <img id="slide1" src="../IMG/Movie/1.jpg" alt="Slide 1">
+                <img id="slide2" src="../IMG/Movie/2.jpg" alt="Slide 2">
+                <img id="slide3" src="../IMG/Movie/3.jpg" alt="Slide 3">
+            </div>
+            <div class="slider-nav">
+                <button class="nav-btn" data-slide="0"></button>
+                <button class="nav-btn" data-slide="1"></button>
+                <button class="nav-btn" data-slide="2"></button>
             </div>
         </div>
-        <div class="product">
-            <div class="product_inner">
-                <div class="c_fixed">
-                    <div class="bg_fixed" style="background: none; position: relative;">
-                        <ul class="tab_st07 tab_sb03">
-                            <li class="on">
-                                <a href="" class="btn50" style="width: 326.667px;">Bán Chạy Nhất</a>
-                            </li>
-                            <li class="">
-                                <a href="" class="btn10" style="width: 326.667px;">Danh Mục Hàng Bán</a>
-                            </li>
-                            <li class="">
-                                <a href="" class="btn20" style="width: 326.667px;">Lotte Combo</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="movie">
+            <ul class="tab">
+                <li>
+                    <a class="btn01 active">Phim đang chiếu</a>
+                </li>
+                <li>
+                    <a class="btn02">Phim sắp chiếu</a>
+                </li>
+            </ul>
+            <div class="tab_content on">
+                <ul class="list_movie">
+                    <ul class="child_movie">
+                        <li>
+                            <a href="" class="img">
+                                <img src="../IMG/Movie/poster.jpg" alt="">
+                            </a>
+                            <dl class="list_text">
+                                <span>Chị Dậu</span>
+                                <span class="rate">100 Phút</span>
+                                <span class="grade"><em>20/12/2024</em></span>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="../IMG/Movie/poster2.jpg" alt="">
+                            </a>
+                            <dl class="list_text">
+                                <span>Vua sư tử</span>
+                                <span class="rate">118Phút</span>
+                                <span class="grade"><em>18/12/2024</em></span>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="../IMG/Movie/poster3.jpg" alt="">
+                            </a>
+                            <dl class="list_text">
+                                <span>Kính vạn hoa</span>
+                                <span class="rate">127Phút</span>
+                                <span class="grade"><em>23/12/2024</em></span>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="../IMG/Movie/poster4.jpg" alt="">
+                            </a>
+                            <dl class="list_text">
+                                <span>Sản phẩm cốc vua sư tử</span>
+                            </dl>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="list_movie">
+                    <ul class="child_movie">
+                        <li>
+                            <a href="" class="img">
+                                <img src="../IMG/Movie/poster5.jpg" alt="">
+                            </a>
+                            <dl class="list_text">
+                                <span>Linh miêu</span>
+                                <span class="rate">110 Phút</span>
+                                <span class="grade"><em>22/11/2024</em></span>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="../IMG/Movie/poster6.jpg" alt="">
+                            </a>
+                            <dl class="list_text">
+                                <span>Ngài quỷ</span>
+                                <span class="rate">94 Phút</span>
+                                <span class="grade"><em>13/12/2024</em></span>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="../IMG/Movie/poster7.jpg" alt="">
+                            </a>
+                            <dl class="list_text">
+                                <span>Yêu em không cần lý do</span>
+                                <span class="rate">106 Phút</span>
+                                <span class="grade"><em>20/12/2024</em></span>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="../IMG/Movie/poster8.jpg" alt="">
+                            </a>
+                            <dl class="list_text">
+                                <span>Biệt đội tí hon</span>
+                                <span class="rate">76 Phút</span>
+                                <span class="grade"><em>24/12/2024</em></span>
+                            </dl>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="tab_follow" id="quick" style="top: 700px;">
+                <ul>
+                    <li>
+                        <a href="Ticket.html" title="Đặt vé nhanh ">
+                            <span>
+                                <img src="../IMG/DAT_VE_NHANH.jpg" alt="Đặt vé nhanh ">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Cinema.html" title="Nơi đặt vé">
+                            <span>
+                                <img src="../IMG/NOI_DAT_VE.jpg" alt="Nơi đặt vé">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" title="Membership">
+                            <span>
+                                <img src="../IMG/MEMBERSHIP.jpg" alt="Membership">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Hotline.html" title="Trung tâm khách hàng ">
+                            <span>
+                                <img src="../IMG/FAQ.jpg" alt="Trung tâm khách hàng ">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="btn_top" title="TOP" style="display: block;">
+                    <span>TOP</span>
+                    <img src="../IMG/icon_quick_new07.png" alt="Di chuyển lên">
+                </a>
             </div>
         </div>
-
+    </div>
+    <div class="footer">
+        <div class="footBnImg">
+            <div class="Footer_Main">
+                <a href="KhuyenMai.html">
+                    <img src="../IMG/footer_main.jpg" width="980" alt="Bottom 1 HONDA BOOKING">
+                </a>
+            </div>
+        </div>
+        <div class="ads_banner">
+            <a href="event.html">
+                <img src="../IMG/event_content.png" width="980" height="372">
+            </a>
+        </div>
+        <div class="footInner">
+            <div class="footer_tit">
+                <span class="footer_logo">
+                    <img src="../IMG/logo_footer.gif" alt="LOTTE CINEMA">
+                </span>
+            </div>
+            <div class="company_info">
+                <p>CÔNG TY TNHH LOTTE CINEMA VIỆT NAM</p>
+                <p>Giấy CNĐKDN: xxxxxxxxxxxx, đăng ký lần đầu ngày xxxxxxxx, đăng ký thay đổi lần thứ 10 ngày xxxxxxxx,
+                    cấp bởi Sở KHĐT Thành phố xxxxxxxxxxx</p>
+                <p>Địa chỉ: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                <p>Hotline: xxxxxxxxxxxx</p>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../JSS/btn_close.js"></script>
+    <script src="../JSS/movie.js"></script>
+    <script src="../JSS/shop.js"></script>
+
 </body>
 
 </html>
