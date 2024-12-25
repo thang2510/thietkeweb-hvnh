@@ -1,0 +1,170 @@
+html {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+
+.main-content h1 {
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    color: black;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+}
+
+.content-items {
+    display: flex;
+    justify-content: space-between;
+    /* Chia đều không gian giữa chữ và ảnh */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    gap: 10px;
+    /* Khoảng cách giữa chữ và ảnh */
+}
+
+.content-item-text {
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    flex: 1;
+    /* Chữ sẽ chiếm phần còn lại của không gian */
+    padding: 10px;
+    /* Thêm một chút đệm nếu cần */
+    text-align: justify;
+    /* Đảm bảo văn bản trải đều */
+    padding-left: 260px;
+    font-size: 15px;
+}
+
+.conten-items-img img {
+    max-width: 100%;
+    /* Đảm bảo ảnh không vượt quá chiều rộng container */
+    height: auto;
+    /* Giữ tỷ lệ ảnh */
+    max-height: 300px;
+    padding-right: 200px;
+    border-radius: 10px;
+}
+
+/*  */
+.dichvu h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #000000;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    font-style: italic;
+}
+
+.dichvu {
+    text-align: center;
+    align-items: center;
+}
+
+/* Container cho các mục dịch vụ */
+.dichvu-items {
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Phần nội dung text */
+.dichvu-items {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dichvu-img {
+    flex: 1;
+    text-align: center;
+}
+
+.dichvu-img img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.dichvu-text {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.dichvu-text h2 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.dichvu-text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Form Styles */
+.form-types {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.form-types h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.form-types label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-types input,
+.form-types select,
+.form-types textarea,
+.form-types button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-types button {
+    background-color: #22282e;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.form-types button:hover {
+    background-color: #6f7d8c;
+}
