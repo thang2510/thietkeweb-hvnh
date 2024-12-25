@@ -1,0 +1,183 @@
+.Container {
+    width: 980px;
+    min-height: 100px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#content {
+    position: relative;
+    min-height: 400px;
+}
+
+.container {
+    color:#555;
+    font-size:12px;
+    line-height:12px;
+    margin:0px 245.6px;
+    padding: 30px 0px 0px;
+}
+
+.ticket_left {
+    float: left;
+    width: 629px;
+}
+
+.theater_header {
+    overflow: hidden;
+    height: 59px;
+    padding: 0 25px 0 20px;
+    line-height: 59px;
+    border-bottom: 1px solid #dedede;
+}
+
+.ticket_My {
+    overflow: hidden;
+    height: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid #dedede;
+}
+
+.theater_cont {
+    position: relative;
+    padding: 20px 0 0 20px;
+}
+
+.ticket_right {
+    float: right;
+    width: 350px;
+    border-left: 1px solid #c0c0c0;
+    box-sizing: border-box;
+}
+
+.theater_header {
+    overflow: hidden;
+    height: 59px;
+    padding: 0 25px 0 20px;
+    line-height: 59px;
+    border-bottom: 1px solid #dedede;
+}
+
+.theater_header dt {
+    float: left;
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    font-weight: bold;
+    color: #231f20;
+}
+
+.theater_header dd {
+    float: right;
+    padding-left: 7px;
+    background: url(../IMG/bullet.gif) no-repeat 0 50%;
+    font-size: 13px;
+    color: #777;
+}
+
+.ticket_My dt {
+    float: left;
+    color: #231f20;
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.ticket_My dd {
+    overflow: hidden;
+    float: right;
+    line-height: 50px;
+}
+
+.ticket_My dd .txtCiadd {
+    float: left;
+    font-size: 13px;
+    color: #777;
+    padding-right: 20px;
+}
+
+.ticket_My dd .btnLogin {
+    float: left;
+    display: block;
+    min-width: 70px;
+    height: 28px;
+    margin: 10px 25px 0 0;
+    line-height: 28px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #999;
+    background: #fff;
+    color: #231f20;
+    padding: 0 10px;
+}
+
+.movie_cont {
+    height: 520px;
+    min-height: 520px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.theater_list {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.theater_list li:first-child {
+    background: none;
+    padding-left: 0px;
+    margin-left: 10px;
+}
+
+.theater_list li {
+    float: left;
+    font-size: 14px;
+    padding: 0 20px;
+    background: url(../IMG/bg_theater_line.gif) no-repeat left center;
+}
+
+.tab_cont.on {
+    display: block;
+}
+
+.theater_zone {
+    position: relative;
+}
+
+.theater_zone li {
+    margin-bottom: 8px;
+}
+
+.area_cont.on {
+    display: block;
+}
+
+.area_list {
+    overflow: hidden;
+    width: 409px;
+}
+
+.area_list li {
+    float: left;
+    margin: 0 0 8px 5px;
+    display: table;
+}
+
+.area_list li a {
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+    width: 129px;
+    height: 40px;
+    border: 1px solid #efefef;
+    background: #efefef;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    line-height: 16px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    letter-spacing: -1px;
+}

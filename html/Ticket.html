@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../CSS/banner.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
-    <link rel="stylesheet" href="../CSS/Shop.css">
+    <link rel="stylesheet" href="../CSS/ticket.css">
 </head>
 
 <body>
@@ -70,31 +70,209 @@
     </div>
     <!--Container-->
     <div class="Container">
-        <div class="content">
-            <div class="Movie_box">
-                <img src="../IMG/Movie_box.jpg" alt="Movie_box">
+        <div class="promotion_ticketing" style="">
+            <div style="margin-top: 20px;">
+                <img src="" width="980" style="width: 100%;">
             </div>
+            <div style="margin-top: 20px;"><a href="event.html" target="_blank" class="text-blue"><img
+                        src="../IMG/event_ticket.jpg" alt="Ticket_241113" width="980" style="width: 100%;"></a></div>
         </div>
-        <div class="product">
-            <div class="product_inner">
-                <div class="c_fixed">
-                    <div class="bg_fixed" style="background: none; position: relative;">
-                        <ul class="tab_st07 tab_sb03">
-                            <li class="on">
-                                <a href="" class="btn50" style="width: 326.667px;">Bán Chạy Nhất</a>
-                            </li>
-                            <li class="">
-                                <a href="" class="btn10" style="width: 326.667px;">Danh Mục Hàng Bán</a>
-                            </li>
-                            <li class="">
-                                <a href="" class="btn20" style="width: 326.667px;">Lotte Combo</a>
-                            </li>
+        <div class="ticket_inner">
+            <div class="ticket_left">
+
+                <!-- 2016.05.03 웹접근성 -->
+                <div class="blind">
+                    <h3>Rạp chiếu phim</h3> <!--영화관-->
+                </div>
+
+                <dl class="theater_header">
+                    <dt class="Lang-LBL0001">Rạp</dt>
+                    <dd class="txt_add"></dd> <!-- 최대 2개까지 선택 가능 -->
+                </dl>
+                <dl class="ticket_My">
+                    <dt class="Lang-LBL0003">Rạp chiếu phim của tôi</dt>
+                    <!-- 비로그인-->
+                    <dd class="default">
+                        <span class="txtCiadd Lang-LBL0004">Bạn có thể kiểm tra sau khi đăng nhập.</span>
+                        <a href="javascript:openLoginPopup($(this));" class="btnLogin"
+                            title="Xem thông tin chi tiết phim"><span class="Lang-LBL0005">Đăng nhập</span></a>
+                        <!--새창 열림-->
+                    </dd>
+                    <!-- 비로그인-->
+                    <dd class="other" style="display: none;">
+                        <span class="txtCiadd Lang-LBL0006">Bạn có thể kiểm tra rạp hát MY bằng cách đăng nhập với tư
+                            cách thành viên đầy đủ.</span>
+                    </dd>
+                    <!-- 로그인후 영화등록후 -->
+                    <dd class="list" style="display: none;">
+                        <span class="txtCiadd Lang-LBL0007">Vui lòng đăng ký rạp chiếu phim MY.</span>
+                        <ul class="favorite_list">
+                        </ul>
+                        <a href="javascript:void(0);" class="btnCinema" title="Xem thông tin chi tiết phim"><em
+                                class="Lang-LBL0008">Cài đặt</em></a> <!--새창 열림-->
+                    </dd>
+                </dl>
+                <div class="theater_cont">
+                    <!-- 0811 마크업 전체 수정 -->
+                    <div class="theater_top">
+                        <ul class="theater_list">
+                            <li><a href="javascript:void(0);" class="tab01 on"><span class="Lang-LBL0009">Tất
+                                        cả</span></a></li>
+                            <li><a href="javascript:void(0);" class="tab02"><span class="Lang-LBL0010">Phòng chiếu đặc
+                                        biệt</span></a></li>
                         </ul>
                     </div>
+                    <div class="tab_srcoll">
+                        <!-- 2016.05.03 웹접근성법 -->
+                        <h4 class="blind" id="cinema_title_h4">Tất cả các rạp<!--전체영화관--></h4>
+                        <div class="tab_cont on">
+                            <ul class="theater_zone screen1">
+                                <li class="area0001"> <span class="area_zone"><a href="javascript:void(0);" class="on">
+                                            <h4>TPHCM(<em>9</em>)</h4>
+                                            <div class="blind">Đã chọn</div>
+                                        </a></span>
+                                    <div class="area_cont on">
+                                        <ul class="area_list d0001">
+                                            <li> <a href="javascript:void(0);" class="100018009">Cantavil</a></li>
+                                            <li> <a href="javascript:void(0);" class="100018008">Cộng Hòa</a></li>
+                                            <li> <a href="javascript:void(0);" class="100018027">Gò Vấp</a></li>
+                                            <li> <a href="javascript:void(0);" class="100018044">Gold View</a></li>
+                                            <li> <a href="javascript:void(0);" class="100018046">Moonlight</a></li>
+                                            <li> <a href="javascript:void(0);" class="100018001">Nam Sài Gòn</a></li>
+                                            <li> <a href="javascript:void(0);" class="100018024">Nowzone</a></li>
+                                            <li> <a href="javascript:void(0);" class="100018012">Phú Thọ</a></li>
+                                            <li> <a href="javascript:void(0);" class="100018028">Thủ Đức</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="area0002"> <span class="area_zone"><a href="javascript:void(0);">
+                                            <h4>Hà Nội(<em>4</em>)</h4>
+                                        </a></span>
+                                    <div class="area_cont">
+                                        <ul class="area_list d0002">
+                                            <li> <a href="javascript:void(0);" class="100028005">Hà Đông</a></li>
+                                            <li> <a href="javascript:void(0);" class="100028049">Kosmo</a></li>
+                                            <li> <a href="javascript:void(0);" class="100028025">Thăng Long</a></li>
+                                            <li> <a href="javascript:void(0);" class="100028050">West Lake</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="area0003"> <span class="area_zone"><a href="javascript:void(0);">
+                                            <h4>ĐB Sông Hồng(<em>8</em>)</h4>
+                                        </a></span>
+                                    <div class="area_cont">
+                                        <ul class="area_list d0003">
+                                            <li> <a href="javascript:void(0);" class="100038017">Bắc Giang</a></li>
+                                            <li> <a href="javascript:void(0);" class="100038039">Bắc Ninh</a></li>
+                                            <li> <a href="javascript:void(0);" class="100038033">Hải Dương</a></li>
+                                            <li> <a href="javascript:void(0);" class="100038022">Hải Phòng</a></li>
+                                            <li> <a href="javascript:void(0);" class="100038032">Nam Định</a></li>
+                                            <li> <a href="javascript:void(0);" class="100038023">Ninh Bình</a></li>
+                                            <li> <a href="javascript:void(0);" class="100038040">Phủ Lý</a></li>
+                                            <li> <a href="javascript:void(0);" class="100038026">Thái Bình</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="area0004"> <span class="area_zone"><a href="javascript:void(0);">
+                                            <h4>Đông Bắc, Tây Bắc(<em>3</em>)</h4>
+                                        </a></span>
+                                    <div class="area_cont">
+                                        <ul class="area_list d0004">
+                                            <li> <a href="javascript:void(0);" class="100048014">Hạ Long</a></li>
+                                            <li> <a href="javascript:void(0);" class="100048030">Tuyên Quang</a></li>
+                                            <li> <a href="javascript:void(0);" class="100048021">Việt Trì</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="area0005"> <span class="area_zone"><a href="javascript:void(0);">
+                                            <h4>Bắc Miền Trung(<em>4</em>)</h4>
+                                        </a></span>
+                                    <div class="area_cont">
+                                        <ul class="area_list d0005">
+                                            <li> <a href="javascript:void(0);" class="100058037">Đồng Hới</a></li>
+                                            <li> <a href="javascript:void(0);" class="100058013">Huế</a></li>
+                                            <li> <a href="javascript:void(0);" class="100058035">Thanh Hóa</a></li>
+                                            <li> <a href="javascript:void(0);" class="100058029">Vinh</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="area0006"> <span class="area_zone"><a href="javascript:void(0);">
+                                            <h4>Nam Miền Trung(<em>7</em>)</h4>
+                                        </a></span>
+                                    <div class="area_cont">
+                                        <ul class="area_list d0006">
+                                            <li> <a href="javascript:void(0);" class="100068036">Bảo Lộc</a></li>
+                                            <li> <a href="javascript:void(0);" class="100068007">Đà Nẵng</a></li>
+                                            <li> <a href="javascript:void(0);" class="100068047">Hội An</a></li>
+                                            <li> <a href="javascript:void(0);" class="100068004">Nha Trang Thái
+                                                    Nguyên</a></li>
+                                            <li> <a href="javascript:void(0);" class="100068038">Nha Trang Trần Phú</a>
+                                            </li>
+                                            <li> <a href="javascript:void(0);" class="100068043">Phan Rang</a></li>
+                                            <li> <a href="javascript:void(0);" class="100068011">Phan Thiết</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="area0007"> <span class="area_zone"><a href="javascript:void(0);">
+                                            <h4>Đông Nam Bộ(<em>6</em>)</h4>
+                                        </a></span>
+                                    <div class="area_cont">
+                                        <ul class="area_list d0007">
+                                            <li> <a href="javascript:void(0);" class="100078019">Biên Hòa</a></li>
+                                            <li> <a href="javascript:void(0);" class="100078010">Bình Dương</a></li>
+                                            <li> <a href="javascript:void(0);" class="100078045">Dĩ An</a></li>
+                                            <li> <a href="javascript:void(0);" class="100078006">Đồng Nai</a></li>
+                                            <li> <a href="javascript:void(0);" class="100078031">Tây Ninh</a></li>
+                                            <li> <a href="javascript:void(0);" class="100078015">Vũng Tàu</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="area0008"> <span class="area_zone"><a href="javascript:void(0);">
+                                            <h4>Tây Nam Bộ(<em>4</em>)</h4>
+                                        </a></span>
+                                    <div class="area_cont">
+                                        <ul class="area_list d0008">
+                                            <li> <a href="javascript:void(0);" class="100088041">Cà Mau</a></li>
+                                            <li> <a href="javascript:void(0);" class="100088016">Cần Thơ Cái Răng</a>
+                                            </li>
+                                            <li> <a href="javascript:void(0);" class="100088018">Cần Thơ Ninh Kiều</a>
+                                            </li>
+                                            <li> <a href="javascript:void(0);" class="100088020">Long Xuyên</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--// 0810 마크업 전체 수정 -->
+                        </div>
+                        <div class="tab_cont">
+                            <ul class="theater_zone screen2">
+                                <li class="area0940"> <span class="area_zone"><a href="javascript:void(0);">Super
+                                            Plex(<em>1</em>)</a></span>
+                                    <div class="area_cont">
+                                        <h5 class="blind">Super Plex</h5>
+                                        <ul class="area_list s0940">
+                                            <li> <a href="javascript:void(0);" class="209408027">Gò Vấp</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="area0945"> <span class="area_zone"><a href="javascript:void(0);">Cine
+                                            Comfort(<em>1</em>)</a></span>
+                                    <div class="area_cont">
+                                        <h5 class="blind">Cine Comfort</h5>
+                                        <ul class="area_list s0945">
+                                            <li> <a href="javascript:void(0);" class="209458044">Gold View</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- // 0811 마크업 전체 수정 -->
                 </div>
             </div>
+            <div class="ticket_right"></div>
         </div>
-    
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../JSS/btn_close.js"></script>
