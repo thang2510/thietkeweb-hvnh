@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../CSS/banner.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
-    <link rel="stylesheet" href="../CSS/Shop.css">
+    <link rel="stylesheet" href="../CSS/cinema.css">
 </head>
 
 <body>
@@ -70,34 +70,155 @@
     </div>
     <!--Container-->
     <div class="Container">
-        <div class="content">
-            <div class="Movie_box">
-                <img src="../IMG/Movie_box.jpg" alt="Movie_box">
-            </div>
-        </div>
         <div class="product">
             <div class="product_inner">
                 <div class="c_fixed">
                     <div class="bg_fixed" style="background: none; position: relative;">
-                        <ul class="tab_st07 tab_sb03">
+                        <ul class="tab_st07">
                             <li class="on">
-                                <a href="" class="btn50" style="width: 326.667px;">Bán Chạy Nhất</a>
+                                <a href="" class="btn50 active" data-electronic="list_cinema_hot_selling"
+                                    style="width: 326.667px;">Lịch chiếu Phim</a>
                             </li>
                             <li class="">
-                                <a href="" class="btn10" style="width: 326.667px;">Danh Mục Hàng Bán</a>
+                                <a href="" class="btn10" data-electronic="list_cinema_hot_selling"
+                                    style="width: 326.667px;">Vị trí rạp</a>
                             </li>
                             <li class="">
-                                <a href="" class="btn20" style="width: 326.667px;">Lotte Combo</a>
+                                <a href="" class="btn20" data-electronic="list_cinema_hot_selling"
+                                    style="width: 326.667px;">Hướng dẫn tới rạp</a>
                             </li>
                         </ul>
                     </div>
                 </div>
+                <h3 class="product_tit">Lịch chiếu Phim</h3>
+                <div class="Lich">
+                </div>
+                <h3 class="product_tit">Vị trí rạp</h3>
+                <div class="list_cinema_hot_selling">
+                    <d class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5884919834407!2d105.82623827487546!3d21.009126380635323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac800f450807%3A0x419a49bcd94b693a!2zSOG7jWMgVmnhu4duIE5nw6JuIEjDoG5n!5e0!3m2!1svi!2s!4v1735109826033!5m2!1svi!2s"
+                            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </d>
+                </div>
+                <h3 class="product_tit">Hướng dẫn tới rạp</h3>
+                <table border ="1" class="trafficATb">
+                    <colgroup>
+                        <col style="width: 160px">
+                        <col style="width: 820px">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><span class="car">Nơi đỗ xe</span></th> 
+                            <td>
+                                <ul class="trafficMemo" id="cinemaCar">
+                                    <li>+ Xe mô tô: Quý khách có thể giữ xe tại tầng hầm B1 của tòa nhà Cantavil Premier
+                                        phía mặt đường Song Hành (hướng cổng vô nằm cạnh cửa hàng Bread Talk).</li>
+                                    <li> - Phí giữ xe là 5,000VNĐ.</li>
+                                    <li></li>
+                                    <li>+ Xe ô tô: Quý khách có thể giữ xe ở phía sau tòa nhà hoặc dưới tầng hầm B2
+                                        (hướng cổng vô nằm cạnh cửa hàng Bread Talk). </li>
+                                    <li></li>
+                                    <li>+ Tuyến xe buýt: Các tuyến đi ngang Lotte Cinema Cantavil</li>
+                                    <li> - Tuyến 06 (Bến xe ĐH Nông Lâm - Bến xe Chợ Lớn)</li>
+                                    <li> - Tuyến 56 (Bến xe ĐH Giao Thông Vận Tải - Bến xe Chợ Lớn)</li>
+                                    <li> - Tuyến 150 (Bến xe Chợ Lớn - Ngã 3 Tân Vạn</li>
+                                    <li> - Tuyến 104 (Bến xe ĐH Nông Lâm - Bến xe An Sương)</li>
+                                    <li> - Tuyến số 10, 12, 30, ...</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" id="a_moreinfo"><span class="parking">Tiện ích đi kèm</span></th>
+                            <td>
+                                <ul class="trafficMemo" id="cinemaParkingInfomation">
+                                    <li>****Lotte Cinema Cantavil nằm trong trung tâm mua sắm Cantavil Premier với những
+                                        tiện lợi đi kèm như:</li>
+                                    <li> - Siêu thị Big C.</li>
+                                    <li> - Nhà Hàng: Lotteria, Cơm tấm California, Don Chicken, D'Maris, Lẩu Công Chúa,
+                                        ...</li>
+                                    <li> - Cà Phê: Highlands Coffee, The Coffee House, ...</li>
+                                    <li> - Mua sắm: Aldo, Nike, Vascara, Adidas, Mĩ phẩm Skinfood, The Face shop,Yves
+                                        Rocher, Casio, PNJ, SJC, Lancome, ...</li>
+                                    <li> - Điện tử: Xiaomi.</li>
+                                    <li> - Y tế: Trung tâm tiêm chủng INC.</li>
+                                    <li> - Tiện ích khác: Play Game, ...</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-
+        <div class="tab_follow" id="quick" style="top: 700px;">
+            <ul>
+                <li>
+                    <a href="Ticket.html" title="Đặt vé nhanh ">
+                        <span>
+                            <img src="../IMG/DAT_VE_NHANH.jpg" alt="Đặt vé nhanh ">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Cinema.html" title="Nơi đặt vé">
+                        <span>
+                            <img src="../IMG/NOI_DAT_VE.jpg" alt="Nơi đặt vé">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" title="Membership">
+                        <span>
+                            <img src="../IMG/MEMBERSHIP.jpg" alt="Membership">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Hotline.html" title="Trung tâm khách hàng ">
+                        <span>
+                            <img src="../IMG/FAQ.jpg" alt="Trung tâm khách hàng ">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <a href="" class="btn_top" title="TOP" style="display: block;">
+                <span>TOP</span>
+                <img src="../IMG/icon_quick_new07.png" alt="Di chuyển lên">
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footBnImg">
+            <div class="Footer_Main">
+                <a href="KhuyenMai.html">
+                    <img src="../IMG/footer_main.jpg" width="980" alt="Bottom 1 HONDA BOOKING">
+                </a>
+            </div>
+        </div>
+        <div class="ads_banner">
+            <a href="event.html">
+                <img src="../IMG/event_content.png" width="980" height="372">
+            </a>
+        </div>
+        <div class="footInner">
+            <div class="footer_tit">
+                <span class="footer_logo">
+                    <img src="../IMG/logo_footer.gif" alt="LOTTE CINEMA">
+                </span>
+            </div>
+            <div class="company_info">
+                <p>CÔNG TY TNHH LOTTE CINEMA VIỆT NAM</p>
+                <p>Giấy CNĐKDN: xxxxxxxxxxxx, đăng ký lần đầu ngày xxxxxxxx, đăng ký thay đổi lần thứ 10 ngày xxxxxxxx,
+                    cấp bởi Sở KHĐT Thành phố xxxxxxxxxxx</p>
+                <p>Địa chỉ: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                <p>Hotline: xxxxxxxxxxxx</p>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../JSS/btn_close.js"></script>
+    <script src="../JSS/cinema.js"></script>
 </body>
 
 </html>

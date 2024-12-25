@@ -1,0 +1,206 @@
+.map {
+    width: 100%;
+    display: flex;
+    /* Sử dụng Flexbox */
+    justify-content: center;
+    /* Căn giữa ngang */
+    align-items: center;
+    /* Căn giữa dọc */
+    flex-direction: column;
+    /* Xếp các phần tử theo cột */
+}
+
+.map iframe {
+    margin: 0 auto;
+}
+
+
+
+.product {
+    width: 100%;
+    background: #f9f6ec;
+}
+
+.product_inner {
+    width: 980px;
+    margin: 0 auto;
+    padding: 50px 0 0;
+}
+
+.c_fixed {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 105;
+    background: #f9f6ec;
+}
+
+.tab_st07 li a {
+    display: block;
+    /* width: 197px; */
+    background: #fff;
+    border: 1px solid #c0c0c0;
+    border-left: none;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    color: #231f20;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.c_fixed .bg_fixed {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.tab_st07 {
+    overflow: hidden;
+    width: 980px;
+}
+
+.tab_st07 li {
+    float: left;
+}
+
+.tab_st07 li:first-child.on a {
+    border-color: #cdc197;
+}
+
+.btn50.active {
+    background: #cdc197;
+}
+
+.btn10.active {
+    background: #cdc197;
+}
+
+.btn20.active {
+    background: #cdc197;
+}
+
+.list_cinema_hot_selling {
+    margin-left: -20px;
+}
+
+.tab_st07 li a {
+    /* width: 246px; */
+    line-height: 48px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.product_tit {
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #231f20;
+    font-weight: bold;
+    padding-top: 30px !important;
+}
+
+.product_tit a {
+    color: #231f20;
+    word-wrap: break-word;
+}
+
+.trafficATb {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #999;
+}
+
+.trafficATb tbody th {
+    vertical-align: middle;
+    border: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #dedede;
+    background: #f9f6ec;
+    font-size: 14px;
+    color: #231f20;
+}
+
+.trafficATb tbody td {
+    border: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #dedede;
+    vertical-align: top;
+}
+
+.trafficATb tbody th .car {
+    padding: 34px 0 0 0;
+    background: url(../IMG/icon/icon_car.png) no-repeat center top;
+}
+
+.trafficATb tbody td .trafficMemo {
+    padding-left: 12px;
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+}
+
+.trafficATb tbody td .trafficMemo li {
+    text-indent: -9px;
+}
+
+.trafficATb tbody th span {
+    display: inline-block;
+    min-width: 30px;
+}
+
+.trafficTit {
+    padding: 0 0 10px 0;
+    font-size: 18px;
+    color: #231f20;
+}
+
+.come_road .trafficTit {
+    padding-top: 30px;
+}
+
+
+.tab_follow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.tab_follow li {
+    border-bottom: 1px solid #d7d7d7;
+    background: #fff;
+    text-align: center;
+}
+
+.tab_follow li a {
+    display: block;
+    overflow: hidden;
+    width: 119px;
+    height: 67px;
+    font-size: 12px;
+    color: #231f20;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.tab_follow li span {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+}
+
+.tab_follow .btn_top {
+    display: block;
+    width: 119px;
+    line-height: 31px;
+    font-size: 11px;
+    color: #231f20 !important;
+    text-align: center;
+    background: #cec197;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
